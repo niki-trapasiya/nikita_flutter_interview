@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587507711784",
+    "project_id": "interview-todo",
+    "storage_bucket": "interview-todo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587507711784:android:557c96471706b0ee4d1a1d",
+        "android_client_info": {
+          "package_name": "com.nikita_flutter_interview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdGrmNTGgLoDbVcMe3XGgU0TG_yLZWLzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
