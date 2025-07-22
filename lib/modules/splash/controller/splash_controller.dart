@@ -20,7 +20,7 @@ class SplashController extends GetxController {
   void startTimeOut() {
     cancelTimer();
     _timer = Timer.periodic(const Duration(seconds: 3), (timer) {
-      Get.off(() => HomeScreen());
+      Get.offNamed('/login');
       cancelTimer();
     });
   }
