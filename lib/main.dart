@@ -8,6 +8,9 @@ import 'firebase_options.dart';
 import 'package:nikita_flutter_interview/modules/auth/presentation/login_screen.dart';
 import 'package:nikita_flutter_interview/modules/auth/presentation/signup_screen.dart';
 import 'package:nikita_flutter_interview/modules/home/presentation/home_screen.dart';
+import 'package:nikita_flutter_interview/modules/auth/presentation/user_profile_screen.dart';
+import 'package:nikita_flutter_interview/modules/auth/presentation/rating_screen.dart';
+import 'package:nikita_flutter_interview/modules/auth/presentation/change_password_screen.dart';
 
 
 Future<void> main() async {
@@ -40,6 +43,9 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/login', page: () => LoginScreen()),
         GetPage(name: '/signup', page: () => SignUpScreen()),
         GetPage(name: '/home', page: () => HomeScreen()),
+        GetPage(name: '/profile', page: () => UserProfileScreen()),
+        GetPage(name: '/rating', page: () => RatingScreen()),
+        GetPage(name: '/change-password', page: () => ChangePasswordScreen()),
       ],
     );
   }

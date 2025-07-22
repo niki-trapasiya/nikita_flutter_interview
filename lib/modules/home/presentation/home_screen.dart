@@ -22,6 +22,56 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                gradient: AppColors.primaryGradient,
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.account_circle, size: 64, color: Colors.white),
+                  SizedBox(height: 8),
+                  Text('Welcome!', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+                ],
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.task, color: AppColors.textSecondary),
+              title: Text('My Task'),
+              onTap: () {
+                Get.back();
+                // Already on HomeScreen
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.person, color: AppColors.textSecondary),
+              title: Text('User Profile'),
+              onTap: () {
+                Get.toNamed('/profile');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.star_rate, color: AppColors.textSecondary),
+              title: Text('Rating'),
+              onTap: () {
+                Get.toNamed('/rating');
+              },
+            ),
+            Divider(),
+            ListTile(
+              leading: Icon(Icons.logout, color: AppColors.error),
+              title: Text('Logout'),
+              onTap: () {
+                Get.offAllNamed('/login');
+              },
+            ),
+          ],
+        ),
+      ),
       body: Container(
         decoration: const BoxDecoration(gradient: AppColors.primaryGradient),
         child: SafeArea(
